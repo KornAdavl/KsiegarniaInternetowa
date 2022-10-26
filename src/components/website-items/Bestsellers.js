@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom"
+
 const Bestsellers = () => {
     return (
         <div className="bestsellers">
             <span>Bestsellery</span>
         <div className="bestsellers-books">
-        <div className="book">
+        <Link to="/book" className="book">
             <div className="book-image"></div>
             <div className="book-info">
                 <button>Bestsellery</button>
@@ -13,7 +15,7 @@ const Bestsellers = () => {
                 <button className="addtobuy">Do koszyka</button>
                 
             </div>
-        </div>
+        </Link>
         <div className="book">
         <div className="book-image"></div>
             <div className="book-info">

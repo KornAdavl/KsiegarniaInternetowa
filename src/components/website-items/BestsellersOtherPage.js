@@ -6,6 +6,7 @@ const BestsellersOtherPage = () => {
     return (
         <>
         <NavBar />
+        <span></span>
         <Bestsellers />
         <Footer />
         </>

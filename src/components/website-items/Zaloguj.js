@@ -12,7 +12,7 @@ const Zaloguj = () => {
             <input className="input-zaloguj" type="text" placeholder="Wprowadź swój login"></input>
             <label className="label-zaloguj">Hasło</label>
             <input className="input-zaloguj" type="text" placeholder="Wprowadź swoje hasło"></input>
-            <button className="button-zaloguj">Zaloguj</button>
+            <Link to="/profile" className="button-zaloguj">Zaloguj</Link>
             <span className="info-register">Nie masz jeszcze konta?</span>
             <Link to="/rejestracja" className="button-register">Załóż konto</Link>
         </div>

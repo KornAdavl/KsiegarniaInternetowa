@@ -1,6 +1,7 @@
 import NavBar from "./website-items/NavBar"
 import HomePage from "./website-items/HomePage"
 import Footer from "./website-items/Footer"
+import BookPage from "./website-items/BookPage"
 import { useState } from "react"
 
 const Layout = () => {
@@ -20,7 +21,7 @@ const Layout = () => {
         <>
         <NavBar class={takeClass} />
         <HomePage class={showCategory} />
-        <Footer />
+        <Footer/>
        </>
 
     )

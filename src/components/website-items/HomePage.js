@@ -1,5 +1,6 @@
 import Recommends from "./Recommends"
 import Bestsellers from "./Bestsellers"
+import Koszyk from "./Koszyk"
 
 const HomePage = (props) => {
     return(

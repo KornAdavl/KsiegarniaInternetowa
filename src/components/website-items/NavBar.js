@@ -56,9 +56,9 @@ const NavBar = (props) => {
     /*props.class(showCategories);*/
 
     return (
-        <div className="navbar">
-            <div className="navbar-main">
-                <div className="navbar-logo">
+        <div className="navbar navbar navbar-default">
+            <div className="navbar-main container">
+                <div className="navbar-logo navbar-brand">
                     <Link to="/"><img src={logoImg2}></img></Link>
                 </div>
                 <div className="navbar-search">
@@ -73,19 +73,14 @@ const NavBar = (props) => {
                     </Link>
                   
                 </div>
-                <div className="koszyk">
+                <div className="koszyk1">
                     <img src={koszykImg}></img>
-                    <h3>Koszyk</h3>
-                    <ul className={dropdownProfile}>
-                        <li>
-                            <button>Zaloguj się</button>
-                        </li>
-                    </ul>
+                    <span>Koszyk</span>
                 </div>
                 </div>
             </div>
             <div className="links">
-                <a className="boooks" href="#" onClick={showDropdown}>Książki</a><div className="arrow"><img className={upArrow} src={upArrowImg} onClick={collapse}></img><img className={downArrow} src={downArrowImg} onClick={show}></img> </div>
+                <Link to="/books" className="books" href="#" onClick={showDropdown}>Książki</Link><div className="arrow"><img className={upArrow} src={upArrowImg} onClick={collapse}></img><img className={downArrow} src={downArrowImg} onClick={show}></img> </div>
                     <ul className={dropdown}>
                     <li><a href="#">Literatura</a></li>
                     <li><a href="#">Literatura</a></li>
@@ -93,9 +88,9 @@ const NavBar = (props) => {
                     <li><a href="#">Literatura</a></li>
                     </ul>
                 
-                <a className="link-nowosci" href="#">Nowości</a>
-                <a href="#">Zapowiedzi</a>
-                <a href="#">Promocje</a>
+                <Link to="/nowosci" className="link-nowosci">Nowości</Link>
+                <Link to="/zapowiedzi">Zapowiedzi</Link>
+                <Link to="/promocje">Promocje</Link>
             </div>
         </div>
     )
